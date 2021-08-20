@@ -1,0 +1,41 @@
+@import "../variable.scss";
+
+.range {
+  display: inline-block;
+  border: 1px solid $secondary-color;
+  margin: 2px 5px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 150ms;
+  
+  input {
+    border: none;
+    width: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    &:focus{
+      outline-width: 0;
+    }
+    &::placeholder{
+      text-align: center;
+    }
+  }
+  input:nth-child(1) {
+    padding-left: 4px;
+    
+    &:hover {
+    }
+    &:active {
+      // border: 1px solid $primary-color;
+    }
+  }
+  input:nth-child(2) {
+    padding-right: 4px;
+    
+  }
+}
+.range-focus {
+  box-shadow: 0 0 0 1pt $secondary-color;
+}
