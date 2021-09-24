@@ -39,11 +39,11 @@ B0ovrwAAAABJRU5ErkJggg==" ></image>
 </div>
 
 ## ✨ Features
-
 - Button
 - Input
 - Filter
 - Range
+- Divider
 
 ## 📦 Install
 

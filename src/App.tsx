@@ -5,6 +5,7 @@ import Button from "./components/button";
 import Input from "./components/input";
 import Range from "./components/range";
 import Filter from "./components/filter";
+import Divider from "./components/divider";
 
 function App() {
 
@@ -40,6 +41,8 @@ function App() {
           console.log(value);
         }}
       />
+      <h2>分割线</h2>
+      <Divider>Divider</Divider>
     </div>
   );
 }
