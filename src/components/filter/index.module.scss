@@ -1,12 +1,10 @@
-@import "../variable.scss";
-
 .filter {
   display: inline-block;
   margin: 2px 5px;
   font-size: 14px;
-  border: 1px solid $secondary-color;
+  border: 1px solid var(--secondary-color);
   &:hover {
-    border: 1px solid $secondary-color + e0;
+    border: 1px solid var(--secondary-color) + e0;
   }
   select {
     padding-left: 4px;
@@ -25,7 +23,7 @@
     padding: 8px 4px;
     font-size: 14px;
     border: none;
-    border-left: 1px solid $secondary-color;
+    border-left: 1px solid var(--secondary-color);
 
     cursor: pointer;
     transition: all 150ms;
@@ -35,6 +33,6 @@
   }
 }
 .filter-focus {
-  box-shadow: 0 0 0 1pt $secondary-color;
+  box-shadow: 0 0 0 1pt var(--secondary-color);
   outline-width: 0;
 }

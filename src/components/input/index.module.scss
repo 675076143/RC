@@ -1,18 +1,16 @@
-@import '../variable.scss';
-
 .input {
   margin: 2px 5px;
   padding: 8px 4px;
   border-radius: 2px;
   font-size: 14px;
-  border: 1px solid $secondary-color;
+  border: 1px solid var(--secondary-color);
   cursor: pointer;
   transition: all 150ms;
   &:hover {
-    border: 1px solid $secondary-color+e0;
+    border: 1px solid var(--secondary-color)+e0;
   }
   &:focus {
-    box-shadow: 0 0 0 1pt $secondary-color;
+    box-shadow: 0 0 0 1pt var(--secondary-color);
     outline-width: 0;
   }
 }
