@@ -7,7 +7,7 @@
     "serve": "vite preview",
     "deploy": "gh-pages -d dist",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o ./dist/storybook"
   },
   "dependencies": {
     "react": "alpha",
