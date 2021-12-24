@@ -1,11 +1,14 @@
 {
-  "name": "rc",
-  "version": "0.0.0",
+  "name": "robin-rc",
+  "version": "0.0.0-alpha.9",
   "author": {
     "email": "675076143Robin@gmail.com",
     "name": "Robin",
     "url": "https://reliable100coffee.top"
   },
+  "files": [
+    "src/components"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
