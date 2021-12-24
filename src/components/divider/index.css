@@ -1,0 +1,27 @@
+.divider {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.divider::before {
+  position: relative;
+  top: 50%;
+  width: 50%;
+  border-top: 1px solid;
+  border-top-color: var(--divider-color);
+  border-bottom: 0;
+  transform: translateY(50%);
+  margin-right: 10px;
+  content: "";
+}
+.divider::after {
+  position: relative;
+  top: 50%;
+  width: 50%;
+  border-top: 1px solid;
+  border-top-color: var(--divider-color);
+  border-bottom: 0;
+  transform: translateY(50%);
+  margin-left: 10px;
+  content: "";
+}

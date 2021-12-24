@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./index.module.scss";
+import "./index.css";
 
 export type InputProps = {
   placeholder?: string;
@@ -16,7 +16,7 @@ const Input = (props: InputProps) => {
       onChange={(e) => {
         onChange?.(e.target.value);
       }}
-      className={classes.input}
+      className="input"
     />
   );
 };

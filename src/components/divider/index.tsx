@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./index.module.scss";
+import "./index.css";
 
 export type DividerProps = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ export type DividerProps = {
 
 const Divider = (props: DividerProps) => {
   const { textPosition = 50 } = props
-  return <div className={classes.divider} text-position={"50%"}>{props.children}</div>;
+  return <div className='divider' text-position={"50%"}>{props.children}</div>;
 };
 
 export default Divider;

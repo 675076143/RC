@@ -5,12 +5,7 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 export default defineConfig({
   plugins: [reactRefresh()],
   css: {
-    modules: {},
-    preprocessorOptions: {
-      scss: {
-        additionalData: `$injectedColor: orange;`,
-      },
-    },
+    modules: {}
   },
   base:'./'
 });

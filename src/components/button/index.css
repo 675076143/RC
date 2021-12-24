@@ -8,10 +8,10 @@
   border: 1px solid var(--secondary-color);
   cursor: pointer;
   transition: all 150ms;
-  &:hover {
-    background: var(--secondary-color)+e0;
-  }
-  &:active {
-    border: 1px solid var(--primary-color);
-  }
+}
+.button:hover {
+  background: var(--secondary-color)+e0;
+}
+.button:active {
+  border: 1px solid var(--primary-color);
 }

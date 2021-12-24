@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer, useRef, useState } from "react";
-import classes from "./index.module.scss";
+import "./index.css";
 
 export type FilterProps = {
   onChange?: (value: [string, string]) => void;
@@ -7,7 +7,7 @@ export type FilterProps = {
 
 const Filter = (props: FilterProps) => {
   const { onChange, ...otherProps } = props;
-  const [classNames, setClassNames] = useState(classes.filter);
+  const [classNames, setClassNames] = useState("filter");
   const value = useRef<[string, string]>(["=", ""]);
 
   return (
@@ -15,9 +15,9 @@ const Filter = (props: FilterProps) => {
       {...otherProps}
       className={classNames}
       onFocus={() => {
-        setClassNames(`${classes.filter} ${classes["filter-focus"]}`);
+        setClassNames(`filter filter-focus`);
       }}
-      onBlur={() => setClassNames(classes.filter)}
+      onBlur={() => setClassNames("filter")}
     >
       <select
         onChange={(e) => {

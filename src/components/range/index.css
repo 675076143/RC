@@ -1,0 +1,32 @@
+.range {
+  display: inline-block;
+  border: 1px solid var(--secondary-color);
+  margin: 2px 5px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.range input {
+  border: none;
+  width: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+.range input:focus{
+  outline-width: 0;
+}
+.range input::placeholder{
+  text-align: center;
+}
+.range input:nth-child(1) {
+  padding-left: 4px;
+}
+
+.range input:nth-child(2) {
+  padding-right: 4px;
+}
+.range-focus {
+  box-shadow: 0 0 0 1pt var(--secondary-color);
+}

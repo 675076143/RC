@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import classes from "./index.module.scss";
+import "./index.css";
 
 export type RangeProps = {
   onChange?: (value: [null | number, null | number]) => void;
@@ -7,16 +7,16 @@ export type RangeProps = {
 
 const Range = (props: RangeProps) => {
   const { onChange, ...otherProps } = props;
-  const [classNames, setClassNames] = useState(classes.range);
+  const [classNames, setClassNames] = useState("range");
   const value = useRef<[null | number, null | number]>([null, null]);
   return (
     <div
       {...otherProps}
       className={classNames}
       onFocus={() => {
-        setClassNames(`${classes.range} ${classes["range-focus"]}`);
+        setClassNames('range range-focus');
       }}
-      onBlur={() => setClassNames(classes.range)}
+      onBlur={() => setClassNames("range")}
     >
       <input
         placeholder="min"
