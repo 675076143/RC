@@ -1,6 +1,11 @@
 {
   "name": "rc",
   "version": "0.0.0",
+  "author": {
+    "email": "675076143Robin@gmail.com",
+    "name": "Robin",
+    "url": "https://reliable100coffee.top"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -26,5 +31,6 @@
     "gh-pages": "^3.2.3",
     "typescript": "^4.3.2",
     "vite": "^2.4.4"
-  }
+  },
+  "license": "MIT"
 }
