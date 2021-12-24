@@ -43,8 +43,8 @@ B0ovrwAAAABJRU5ErkJggg==" ></image>
 [![storybook](https://github.com/675076143/RC/blob/master/.storybook/badge.svg)](https://675076143.github.io/RC/storybook)
 [![release](https://img.shields.io/github/v/release/675076143/RC.svg)](https://github.com/675076143/RC/releases/latest)
 [![CI](https://github.com/675076143/RC/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/675076143/RC/actions)
-
 </div>
+
 ## ✨ Features
 - Button
 - Input
@@ -56,10 +56,6 @@ B0ovrwAAAABJRU5ErkJggg==" ></image>
 
 ```bash
 npm install rc
-```
-
-```bash
-yarn add rc
 ```
 
 ## 🔨 Usage
