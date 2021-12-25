@@ -4,7 +4,7 @@ import "./page.css";
 import "../index.css";
 
 interface PageProps {
-  user?: {};
+  user?: Record<string, unknown>;
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;

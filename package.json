@@ -18,7 +18,8 @@
     "build-storybook": "build-storybook -o ./dist/storybook",
     "prepare": "husky install",
     "lint": "eslint src",
-    "fix": "prettier --write src"
+    "lint:fix": "eslint src --fix",
+    "prettier": "prettier --write src"
   },
   "dependencies": {
     "react": "^17.0.2",
