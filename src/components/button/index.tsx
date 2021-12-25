@@ -5,12 +5,19 @@ export type ButtonProps = {
   children: React.ReactNode;
   onClick?: React.MouseEventHandler;
   disabled?: boolean;
+  loading?: boolean;
 };
 
 const Button = (props: ButtonProps) => {
-  const { children, onClick, ...otherProps } = props;
+  const {
+    children,
+    onClick,
+    disabled = false,
+    loading = false,
+    ...otherProps
+  } = props;
   const dynamicStyles: React.CSSProperties = {};
-  if (otherProps.disabled) {
+  if (disabled) {
     Object.assign(dynamicStyles, {
       color: "gray",
       backgroundColor: "lightgray",
@@ -18,13 +25,21 @@ const Button = (props: ButtonProps) => {
       borderColor: "lightgray",
     });
   }
+
+  const classNames = ["button"];
+  if (loading) {
+    classNames.push("loading");
+  }
+
   return (
     <button
       style={dynamicStyles}
+      disabled={loading || disabled}
       {...otherProps}
-      className="button"
+      className={classNames.join(" ")}
       onClick={onClick}
     >
+      {loading && <div className="loader" />}
       {children}
     </button>
   );

@@ -11,6 +11,7 @@ export default {
   argTypes: {
     loading: { control: "boolean" },
     disabled: { control: "boolean" },
+    onClick: { action: "clicked" },
   },
 } as ComponentMeta<typeof Button>;
 
