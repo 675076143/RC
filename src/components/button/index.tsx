@@ -12,10 +12,10 @@ const Button = (props: ButtonProps) => {
   const dynamicStyles: React.CSSProperties = {};
   if (otherProps.disabled) {
     Object.assign(dynamicStyles, {
-      color: 'gray',
+      color: "gray",
       backgroundColor: "lightgray",
-      cursor: 'not-allowed',
-      borderColor:'lightgray'
+      cursor: "not-allowed",
+      borderColor: "lightgray",
     });
   }
   return (

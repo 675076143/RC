@@ -8,7 +8,6 @@ import Filter from "./components/filter";
 import Divider from "./components/divider";
 
 function App() {
-
   return (
     <div className="App">
       <header>

@@ -1,16 +1,16 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Button from '../components/button';
+import Button from "../components/button";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'RC/Button',
+  title: "RC/Button",
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    loading: { control: 'boolean' },
-    disabled: { control: 'boolean' },
+    loading: { control: "boolean" },
+    disabled: { control: "boolean" },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -22,5 +22,5 @@ export const Primary = Template.bind({});
 Primary.args = {
   // primary: true,
   // label: 'Button',
-  children: '点点看?'
+  children: "点点看?",
 };

@@ -3,12 +3,16 @@ import "./index.css";
 
 export type DividerProps = {
   children: React.ReactNode;
-  textPosition?: number
+  textPosition?: number;
 };
 
 const Divider = (props: DividerProps) => {
-  const { textPosition = 50 } = props
-  return <div className='divider' text-position={"50%"}>{props.children}</div>;
+  const { textPosition = 50 } = props;
+  return (
+    <div className="divider" text-position={"50%"}>
+      {props.children}
+    </div>
+  );
 };
 
 export default Divider;

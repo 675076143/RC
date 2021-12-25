@@ -14,7 +14,7 @@ const Range = (props: RangeProps) => {
       {...otherProps}
       className={classNames}
       onFocus={() => {
-        setClassNames('range range-focus');
+        setClassNames("range range-focus");
       }}
       onBlur={() => setClassNames("range")}
     >

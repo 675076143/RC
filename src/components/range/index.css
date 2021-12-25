@@ -14,10 +14,10 @@
   padding-bottom: 8px;
   text-align: center;
 }
-.range input:focus{
+.range input:focus {
   outline-width: 0;
 }
-.range input::placeholder{
+.range input::placeholder {
   text-align: center;
 }
 .range input:nth-child(1) {
